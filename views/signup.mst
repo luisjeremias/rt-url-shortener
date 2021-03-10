@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css"> 
+  <title>SignUp - RTShortener</title>
+</head>
+<body>
+   <div class="logo-container">
+<h1 class="logo">RT Url Shortener</h1>
+    </div>
+  <div class="container">
+<h2 class="pag-info">Faça o Cadastro</h2>
+<form method="POST" autocomplete="off">
+  <label>
+  Nome:
+  <input type="text" name="name">
+</label><br>
+<label>
+  Email:
+  <input type="email" name="email">
+</label><br>
+<label>
+  Password:
+  <input type="password" name="password">
+</label><br>
+
+  <input type="submit" value="Cadastrar" >
+
+</form> 
+<h3> Ja tem uma conta?<a href="/"> Entre!</a></h3>
+</div>
+</body>
+</html>

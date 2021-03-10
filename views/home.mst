@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css"> 
+  <title>Login - RTShortener</title>
+</head>
+<body>
+   <div class="logo-container">
+<h1 class="logo">RT Url Shortener</h1>
+    </div>
+    
+  <div class="container">
+<h2 class="pag-info">Faça o login</h2>
+<form method="POST" autocomplete="off">
+<label>
+  Email:
+  <input type="email" name="email">
+</label><br>
+<label>
+  Password:
+  <input type="password" name="password">
+</label><br>
+
+  <input  type="submit" value="Entrar">
+
+</form> 
+<h3> Ainda não tem uma conta?<a href="/home/signup"> Cadastre-se</a></h3>
+</div>
+ {{#flashes}}
+  {{#success}}
+  <div class="warning">{{.}}</div>
+  {{/success}}
+  {{#error}}
+  <div class="warning">{{.}}</div>
+  {{/error}}
+  {{#info}}
+  <div class="warning">{{.}}</div>
+  {{/info}}
+ {{/flashes}}
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Profile</title>
+</head>
+<body>
+  <a href="/home/index"><div class="logo-container">
+<h1 class="logo">RT Url Shortener</h1>
+    </div></a>
+  <h2 class="pag-info" style="font-size: 16px; text-align: center;">Minhas Urls</h2>
+  <div class="urls">
+    {{#url}}
+    <div class="url-container">
+      <h2>http://localhost:5555/{{url.slug}}</h2>
+      <h3>{{url.url}}</h3>
+    </div>
+    {{/url}}
+  </div>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/index.css">
+  <title>Home - RTShortener</title>
+</head>
+<body>
+     <div class="logo-container">
+<h1 class="logo">RT Url Shortener</h1>
+    </div>
+    <div class="profile">
+      <a href="/home/profile/{{user._id}}">Minhas Urls</a>
+    </div>
+  <div class="container">
+    <h2 class="pag-info">Olá! {{user.name}}</h2>
+  <form method="POST" autocomplete="off">
+    <label>
+      Url:
+      <input type="text" name="url" placeholder="ex:https://meusite.com">
+    </label>
+    <label>
+     Nome Da Nova Url:
+      <input type="text" name="slug" placeholder="ex:Meusite">
+    </label>
+    <input type="submit">
+  </form>
+   {{#flashes}}
+  {{#success}}
+  <div class="warning">{{.}}</div>
+  {{/success}}
+  {{#error}}
+  <div class="warning">{{.}}</div>
+  {{/error}}
+  {{#info}}
+  <div class="warning"><h3 id="txt-link" style="font-size: 19px;">{{.}}</h3></div>
+  {{/info}}
+ {{/flashes}}
+  </div>
+</body>
+</html>
