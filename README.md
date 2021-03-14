@@ -18,33 +18,10 @@ Entre no MongoDb e crie uma base de dados chamada rt
 Entre no diretorio de projeto e crie um .env com informacoes do .env.example
 
 
-Instale as Dependencias
+####Instale as Dependencias
 
->npm install express
+>npm install
 
->npm install express-async-errors
-
->npm install express-flash
-
->npm install express-session
-
->npm install dotenv
-
->npm install jimp
-
->npm install mongoose
-
->npm install mustache-express
-
->npm install nanoid
-
->npm install passport
-
->npm install passport-local
-
->npm install passport-local-mongoose
-
->npm install cookie-parser
 
 
 Depois de instalar todas as dependencias rode no cmd ou terminal npm dev
