@@ -18,7 +18,7 @@ Entre no MongoDb e crie uma base de dados chamada rt
 Entre no diretorio de projeto e crie um .env com informacoes do .env.example
 
 
-####Instale as Dependencias
+#### Instale as Dependencias
 
 >npm install
 
